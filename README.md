@@ -21,11 +21,11 @@ TJDe-Net/data/TJDehaze/test
 The dataset contains:
 - **GT**: Ground truth images (original images).  
 - **hazy**: Hazy images generated using a monocular depth estimation method combined with the atmospheric imaging principle.
-For example, you can add the image `1_0.85_0.25.jpg` to both the **GT** and **hazy** subdirectories.
 
 ---
 
 ## Directory Structure
+```bash
 TJDe-Net/
 │
 ├── checkpoint/
@@ -43,6 +43,7 @@ TJDe-Net/
 ├── result/             # Directory for saving test results
 │
 └── test.py             # Testing script
+```
 
 ---
 
@@ -55,5 +56,3 @@ After running the model, the test results will be saved in the `result` director
 To test the model, use the following command:
 ```bash
 python test.py --model TJDeNet --dataset TJDehaze --exp outdoor
-
-
